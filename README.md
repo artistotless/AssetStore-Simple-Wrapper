@@ -1,4 +1,4 @@
-# AssetStore-Simple-Wrapper
+# Unity AssetStore API Wrapper
 Search, GetAssetInfo functions of AssetStore on Python
 
 :white_check_mark:  def Search(phrase)   
