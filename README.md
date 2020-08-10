@@ -1,5 +1,5 @@
 # AssetStore-Simple-Wrapper
-Search,GetAssetInfo  functions of AssetStore on Python
+Search, GetAssetInfo functions of AssetStore on Python
 
 :white_check_mark:  def Search(phrase)   
 :white_check_mark:  def GetAssetInfo(idAsset)
