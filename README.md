@@ -34,7 +34,15 @@ for i in range(0,GetLength(data)):
 info = GetAssetInfo(JsonToDict(data,0)["id"])
 print(info)
 ```
+## Examples
+```python
+Init('https://assetstore.unity.com')
+Url = 'https://assetstore.unity.com/packages/tools/visual-scripting/dotween-pro-32416'
+Id = GetAssetIdByUrl(Url)
+Info = GetAssetInfoById(Id)
+Info_2 = GetAssetInfoByUrl(Url)
 
-
+#print(Info) or print(Info2)
+```
 
 
