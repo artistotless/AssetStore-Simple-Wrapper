@@ -37,7 +37,7 @@ print(info)
 ## Examples
 ```python
 Init('https://assetstore.unity.com')
-url = 'https://assetstore.unity.com/packages/tools/visual-scripting/dotween-pro-32416'
+url = 'https://assetstore.unity.com/packages/tools/visual-scripting/flowcanvas-33903'
 Id = GetAssetIdByUrl(Url)
 info = GetAssetInfoById(Id)
 info_2 = GetAssetInfoByUrl(Url)
