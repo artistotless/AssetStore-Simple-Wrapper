@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import json
 
 s = requests.Session()
@@ -83,19 +82,21 @@ MAX_ITEMS = int(input('Введите максимальное кол-во ма�
 Init(HOST)
 data = Search(search_phrase)
 #PrintJson(data)
-for i in range(0,GetLength(data)):
-    item = JsonToDict(data,i)
-    print(f'\nID: {item["id"]}')
-    print(f'Title: {item["name"]}')
-    print(f'Publisher: {item["publisherName"]}')
-    print(f'PublisherId: {item["publisherId"]}')
-    print(f'Category: {item["category"]}')
-    print(f'Price: {item["price"]["price"]}')
-    print(f'iconImage: {item["iconImage"]}')
-    print(f'MainImage: {item["mainImage"]}')
-    print('\n---------------\n')
-
+#for i in range(0,GetLength(data)):
+#    item = JsonToDict(data,i)
+#    print(f'\nID: {item["id"]}')
+#    print(f'Title: {item["name"]}')
+#    print(f'Publisher: {item["publisherName"]}')
+#    print(f'PublisherId: {item["publisherId"]}')
+#    print(f'Category: {item["category"]}')
+#    print(f'Price: {item["price"]["price"]}')
+#    print(f'iconImage: {item["iconImage"]}')
+#    print(f'MainImage: {item["mainImage"]}')
+#    print('\n---------------\n')
+#
+data = GetAssetInfo(JsonToDict(data,0)["id"])
+print(data)
 #info = GetAssetInfo(JsonToDict(data)['id')
 #PrintJson(info)
-#SaveJson(data,JSON_PATH)
+SaveJson(data,JSON_PATH)
 
