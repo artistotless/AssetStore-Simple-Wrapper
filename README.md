@@ -37,14 +37,16 @@ print(info)
 ## Examples
 ```python
 Init('https://assetstore.unity.com')
-Url = 'https://assetstore.unity.com/packages/tools/visual-scripting/dotween-pro-32416'
+url = 'https://assetstore.unity.com/packages/tools/visual-scripting/dotween-pro-32416'
 Id = GetAssetIdByUrl(Url)
-Info = GetAssetInfoById(Id)
-Info_2 = GetAssetInfoByUrl(Url)
+info = GetAssetInfoById(Id)
+info_2 = GetAssetInfoByUrl(Url)
 
-#print(Info) or print(Info2)
-#Output example (Json):
-#[{"data": {"product": {"id": "33903", "productId": "274979513323", "itemId": "274935347770", "slug": "flowcanvas-33903", "name": "FlowCanvas", "description": "<strong>FlowCanvas</strong> is a powerful and feature-rich Visual Scripting Solution for Unity, empowering you to create and manipulate virtually any aspect of gameplay elements for your games in a very similar fashion to Unreal Blueprints, but with far less programming knowledge required all around.<br>\n<br>\n<strong>FlowCanvas</strong> and more...
+print(info)
 ```
+####Output example (Json):
+
+####[{"data": {"product": {"id": "33903", "productId": "274979513323", "itemId": "274935347770", "slug": "flowcanvas-33903", "name": "FlowCanvas", "description": "<strong>FlowCanvas</strong> is a powerful and feature-rich Visual Scripting Solution for Unity, empowering you to create and manipulate virtually any aspect of gameplay elements for your games in a very similar fashion to Unreal Blueprints, but with far less programming knowledge required all around.<br>\n<br>\n<strong>FlowCanvas</strong> and more...
+
 
 
