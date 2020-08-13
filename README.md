@@ -1,9 +1,12 @@
 # Unity AssetStore API Wrapper
 Search, GetAssetInfo functions of AssetStore on Python
 
-:white_check_mark:  Search(phrase)   
+:white_check_mark:  Search(phrase)  
+
 :white_check_mark:  GetAssetInfoById(id)
+
 :white_check_mark:  GetAssetInfoByUrl(url)
+
 :white_check_mark:  GetAssetIdByUrl(url)
 
 <a target="_blank" href="https://radikal.ru"><img src="https://c.radikal.ru/c08/2008/72/5ab6352567f4.png" /></a>
@@ -83,7 +86,7 @@ print(info)
 ['plusProSale']
 ['licenseText']
 ```
-### Result of GetAssetInfoByID(id) or GetAssetInfoByUrl(url)
+### Result of Search(phrase,category='')
 ```python
 # For example: 
 results = Search('UFPS')
