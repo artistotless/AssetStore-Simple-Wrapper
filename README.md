@@ -1,8 +1,10 @@
 # Unity AssetStore API Wrapper
 Search, GetAssetInfo functions of AssetStore on Python
 
-:white_check_mark:  def Search(phrase)   
-:white_check_mark:  def GetAssetInfo(idAsset)
+:white_check_mark:  Search(phrase)   
+:white_check_mark:  GetAssetInfoById(id)
+:white_check_mark:  GetAssetInfoByUrl(url)
+:white_check_mark:  GetAssetIdByUrl(url)
 
 <a target="_blank" href="https://radikal.ru"><img src="https://c.radikal.ru/c08/2008/72/5ab6352567f4.png" /></a>
 
@@ -51,5 +53,33 @@ print(info)
 
 ##### [{"data": {"product": {"id": "33903", "productId": "274979513323", "itemId": "274935347770", "slug": "flowcanvas-33903", "name": "FlowCanvas", "description": "<strong>FlowCanvas</strong> is a powerful and feature-rich Visual Scripting Solution for Unity, empowering you to create and manipulate virtually any aspect of gameplay elements for your games in a very similar fashion to Unreal Blueprints, but with far less programming knowledge required all around.<br>\n<br>\n<strong>FlowCanvas</strong> and more...
 
+##### Result of GetAssetInfoByID(id) or GetAssetInfoByUrl(url)
+```python
+# For example: print(GetAssetInfoById(14290)['name']) || Output: Final IK
+# Full list of indexes:
 
-
+['id']
+['productId']
+['itemId']
+['slug']
+['name']
+['description']
+['rating']
+['currentVersion']
+['reviewCount']
+['downloadSize']
+['assetCount']
+['publisher']
+['mainImage']
+['originalPrice']
+['images']
+['category']
+['firstPublishedDate']
+['publishNotes']
+['supportedUnityVersions']
+['state']
+['overlay']
+['overlayText']
+['plusProSale']
+['licenseText']
+```
