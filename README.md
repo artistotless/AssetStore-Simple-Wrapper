@@ -1,7 +1,7 @@
 # Unity AssetStore API Wrapper
 Search, GetAssetInfo functions of AssetStore on Python
 
-:white_check_mark:  Search(phrase)  
+:white_check_mark:  Search(phrase,category='')  
 
 :white_check_mark:  GetAssetInfoById(id)
 
