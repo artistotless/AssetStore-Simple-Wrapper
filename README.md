@@ -83,3 +83,32 @@ print(info)
 ['plusProSale']
 ['licenseText']
 ```
+### Result of GetAssetInfoByID(id) or GetAssetInfoByUrl(url)
+```python
+# For example: 
+results = Search('UFPS')
+print(len(results))
+print(results[0]['name'])
+print(results[0]['price']['price'])
+print(results[0]['category'])
+#Also u can search, using a category
+results = Search('UFPS','templates')
+
+# Full list of indexes:
+['id']
+['name']
+['rating']
+['publisherName']
+['publisherId']
+['category']
+['mainImage']
+['iconImage']
+['price']{price}        
+['plusProSale']  
+['onSale']
+['elevated']     
+['url']
+['isNew']        
+['partner']      
+['labels']
+```
